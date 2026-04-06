@@ -1,0 +1,86 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:white;
+}
+
+nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:15px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:gold;
+}
+
+section{
+  padding:100px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.glass{
+  background: rgba(255,255,255,0.05);
+  padding:30px;
+  border-radius:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background: rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:15px;
+}
+
+.card:hover{
+  box-shadow:0 0 20px gold;
+}
+
+.gallery{
+  width:100%;
+  border-radius:15px;
+  cursor:pointer;
+}
+
+.modal{
+  display:none;
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:black;
+}
+
+.modal img{
+  margin:auto;
+  display:block;
+  max-width:80%;
+}
+
+.contact a{
+  display:block;
+  margin:10px;
+  color:white;
+}
